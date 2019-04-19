@@ -1,3 +1,10 @@
 import '../styles/main.scss';
+import petPhoto from './components/pet';
+import eatQuad from './components/eat'
 
-console.error('hi');
+const init = () => {
+  petPhoto.petPhoto();
+  eatQuad.eatQuad();
+};
+
+init();
