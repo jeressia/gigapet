@@ -1,3 +1,109 @@
+@import './colors';
+@import './variables.scss';
+
 body {
-  background-color: blue;
+  background-image: $backimg;
 }
+
+#app {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 600px;
+  border-radius: 100%;
+  box-shadow: 1px 2px 5px 1px;
+  #eat {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background: #ff00bf;
+    border-radius: 100% 0% 0% 0%;
+    border-bottom: 8px solid black;
+    border: none;
+    text-align: center;
+    flex-direction: column;
+  }
+  #play {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background:#ff00bf;
+    border-radius: 0 100% 0 0;
+    border-bottom: 8px solid black;
+    border: none;
+    text-align: center;
+    flex-direction: column;
+  }
+  #fight {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    border-radius: 0 0 0 100%;
+    border: none;
+    border-top: 8px solid black;
+    text-align: center;
+    flex-direction: column;
+    border-left:none;
+  }
+  #sleep {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    border-radius: 0 0 100% 0;
+    border-top: 8px solid black;
+    border-right:none;
+    text-align: center;
+    flex-direction: column;
+  }
+  #pet{
+      position: absolute;
+      top:25%;
+      margin: 0 auto;
+      margin: 5px;
+      width: 275px;
+      height:275px;
+      border-radius: 100%;
+      border: 8px solid black;
+      background-image: url('../assets/sky.gif');
+      z-index: 1;
+  }
+  .fight{
+    position: absolute;
+    top:14%;
+    left:12%;
+    margin: 0 auto;
+    width: 200px;
+  }
+  .btn {
+      text-align: center;
+    display: inline-block;
+    margin:5px;
+      font-weight: bold;
+      padding: 10px 0 10px 10px ;
+      background-color: lightgray;
+      text-shadow: -1px -1px black, 1px 1px white;
+      color: gray;
+      -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+      box-shadow: 0 .2em gray; 
+      cursor: pointer;
+      max-width: 60px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+  }
+  .btn:active {
+    box-shadow: none;
+    position: relative;
+    top: .2em;
+  }
+  }
+
