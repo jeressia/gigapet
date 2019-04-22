@@ -1,0 +1,27 @@
+.btn {
+  text-align: center;
+display: inline-block;
+margin:5px;
+  font-weight: bold;
+  padding: 7px 0 7px 7px ;
+  background-color: #fdade9;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color:#ff00bf;
+  -webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+-o-border-radius: 7px;
+border-radius: 7px;
+  box-shadow: 0 .2em #ff77dd; 
+  cursor: pointer;
+  max-width: auto;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: none;
+  font-family: 'VT323', monospace;
+  font-size: 25px;
+}
+.btn:active {
+box-shadow: none;
+position: relative;
+top: .2em;
+}

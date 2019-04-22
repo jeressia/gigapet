@@ -3,4 +3,6 @@ const printToDom = (divId, textToPrint) => {
   selectDiv.innerHTML = textToPrint;
 };
 
-export default { printToDom };
+const randomize = max => Math.floor(Math.random() * Math.floor(max));
+
+export default { printToDom, randomize };

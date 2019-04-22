@@ -1,22 +1,33 @@
 @import './colors';
-@import './variables.scss';
+@import '../javascripts/components/eat/eat.scss';
+@import '../javascripts/components/play/play.scss';
+@import '../javascripts/components/fight/fight.scss';
+@import '../javascripts/components/sleep/sleep.scss';
+@import '../javascripts/components/pet/pet.scss';
+@import './buttons';
+@import '../javascripts/components/progress/progress.scss';
+
+@import url('https://fonts.googleapis.com/css?family=VT323');
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
 
 body {
   background-image: $backimg;
 }
+
 
 #app {
   display: flex;
   flex-flow: row wrap;
   margin: 0 auto;
   justify-content: center;
-  max-width: 600px;
+  max-width: 640px;
   border-radius: 100%;
   box-shadow: 1px 2px 5px 1px;
   #eat {
     display: flex;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     background: #ff00bf;
     border-radius: 100% 0% 0% 0%;
     border-bottom: 8px solid black;
@@ -27,8 +38,8 @@ body {
   #play {
     display: flex;
     justify-content: center;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     background:#ff00bf;
     border-radius: 0 100% 0 0;
     border-bottom: 8px solid black;
@@ -39,8 +50,8 @@ body {
   #fight {
     display: flex;
     justify-content: center;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     background: #fff;
     border-radius: 0 0 0 100%;
     border: none;
@@ -52,57 +63,43 @@ body {
   #sleep {
     display: flex;
     justify-content: center;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     background: #fff;
     border-radius: 0 0 100% 0;
+    border: none;
     border-top: 8px solid black;
-    border-right:none;
     text-align: center;
     flex-direction: column;
+    border-right:none;
   }
   #pet{
       position: absolute;
-      top:25%;
+      top:29%;
       margin: 0 auto;
       margin: 5px;
-      width: 275px;
-      height:275px;
+      width: 222px;
+      height:222px;
       border-radius: 100%;
       border: 8px solid black;
       background-image: url('../assets/sky.gif');
       z-index: 1;
   }
-  .fight{
-    position: absolute;
-    top:14%;
-    left:12%;
-    margin: 0 auto;
-    width: 200px;
-  }
-  .btn {
-      text-align: center;
-    display: inline-block;
-    margin:5px;
-      font-weight: bold;
-      padding: 10px 0 10px 10px ;
-      background-color: lightgray;
-      text-shadow: -1px -1px black, 1px 1px white;
-      color: gray;
-      -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -o-border-radius: 7px;
-    border-radius: 7px;
-      box-shadow: 0 .2em gray; 
-      cursor: pointer;
-      max-width: 60px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-  }
-  .btn:active {
-    box-shadow: none;
+  .quad{
+    display: flex;
+    flex-direction: column;
+    width: 175px;
+    justify-content: center;
     position: relative;
-    top: .2em;
+    left: 0px;
+    outline: none;
+  }
+  .quadTitle{
+    font-family: 'Bungee', cursive;
+    color: #fdade9;
+    text-shadow: -1px -1px black, 1px 1px white;
+    font-size: 2em;
+    margin: 20px;
   }
   }
 
